@@ -36,10 +36,12 @@
 					document.write(e.message);
 				});
 				var video = document.querySelector("video");
+				video.srcObject = stream;
 			}
 		</script>
 	</head>
 	<body onload="setup()">
-		<video autoplay playsinline muted></video>
+		<div class ="streams">
+		<video id="video" autoplay muted></video>
 	</body>
 </html>
