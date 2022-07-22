@@ -36,12 +36,6 @@
 					document.write(e.message);
 				});
 				var video = document.querySelector("video");
-				var info = document.querySelector("#info");
-				video.srcObject = stream;
-				video.onloadedmetadata = (e) => {
-					info.innerText = video.videoWidth +" x "+ video.videoHeight;
-					info.style.zIndex = 2;
-				};
 			}
 		</script>
 	</head>
